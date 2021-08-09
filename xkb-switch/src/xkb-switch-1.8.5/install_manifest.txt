@@ -1,0 +1,5 @@
+/usr/bin/xkb-switch
+/usr/lib/libxkbswitch.so.1.8.5
+/usr/lib/libxkbswitch.so.1
+/usr/lib/libxkbswitch.so
+/usr/share/man/man1/xkb-switch.1.gzip

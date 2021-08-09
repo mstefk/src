@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+e9d649458052e9b93843d198ed43a882 CMakeFiles/man_xkb-switch_1
+e9b93803f6866dae1b16e20e78d94a44 xkb-switch.1.gzip
