@@ -36,6 +36,7 @@ static const Rule rules[] = {
 	{ "URxvt",  	NULL,       NULL,       1 << 1, 	1,      		0,           -1 },
 	{ NULL,  	    NULL,       "Search",   NULL, 	    0,      		1,           -1 },
     { NULL,     	"nomacs",   NULL,       NULL,       0,              1,           -1 },
+	{ NULL,     	"tk",       NULL,       NULL,       0,              1,           -1 },
 	
 };
 
@@ -74,6 +75,7 @@ static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "togg
 #include "shiftview.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("python ~/.scripts/dwm_shutdown.py") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("notepadqq") },
 	{ MODKEY,                       XK_i,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("firefox") },
