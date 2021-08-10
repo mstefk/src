@@ -28,15 +28,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     switchtotag    isfloating   monitor */
-	{ "Audacious",  NULL,       NULL,       1 << 5, 	1,      		0,           -1 },
-	{ "firefox",    NULL,       NULL,       1 << 4,  	1,      		0,           -1 },
-	{ "KeePassXC",  NULL,       NULL,       1 << 3, 	1,      		0,           -1 },
-	{ "Pcmanfm",  	NULL,       NULL,       1 << 2, 	1,      		0,           -1 },
-	{ "URxvt",  	NULL,       NULL,       1 << 1, 	1,      		0,           -1 },
-	{ NULL,  	    NULL,       "Search",   NULL, 	    0,      		1,           -1 },
-    { NULL,     	"nomacs",   NULL,       NULL,       0,              1,           -1 },
-	{ NULL,     	"tk",       NULL,       NULL,       0,              1,           -1 },
+	/* class      instance    title       tags mask    isfloating   monitor */
+	{ NULL,  	NULL,       "Search",   NULL, 	 	1,           -1 },
+	{ NULL,     	"nomacs",   NULL,       NULL,       	1,           -1 },
+	{ NULL,     	"tk",       NULL,       NULL,       	1,           -1 },
 	
 };
 
@@ -49,8 +44,8 @@ static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen win
 static const Layout layouts[] = { 
 	/* symbol     arrange function */
 	{ "◧"    /*"[]="*/,      tile },   /* first entry is default */
-	{ "⧉"     /*"><>"*/,      NULL },   /* no layout function means floating behavior */
-	{ "■"       /*"[M]"*/,      monocle },
+	{ "⧉"    /*"><>"*/,      NULL },   /* no layout function means floating behavior */
+	{ "[M]",      monocle },
 };
 
 /* key definitions */
@@ -87,7 +82,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F9,     spawn,          SHCMD("pactl set-sink-mute 0 toggle && pkill -RTMIN+2 dwmblocks ") },
 	{ MODKEY,                       XK_F12,    spawn,          SHCMD("pactl set-sink-volume 0 +5% && pkill -RTMIN+2 dwmblocks ") },
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,               	    XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,               	XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
