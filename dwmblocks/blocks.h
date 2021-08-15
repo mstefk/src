@@ -3,7 +3,7 @@ static const Block blocks[] = {
 	/*Icon*/	/*Command*/		                                             /*Update Interval*/ /*Update Signal*/
 	{"", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	                   10,         0},
 	{"", "~/.scripts/dwm_pulse.sh",						                                0,		   2},
-	{"", "~/.scripts/dwm_keyboard.sh",					                                0,		   1},
+	{"⌨ ", "keyboard_layout",					                                0,		   1},
 	{"", "date +'%b/%d/%Y %H:%M'",														10,		   0},
 	
 };
