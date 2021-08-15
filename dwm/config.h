@@ -21,7 +21,7 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_white /*col_gray1*/, col_gray1,/*col_cyan*/  col_cyan  },
 };
 
-static const char *tags[] = { "", "", "", "🔑", "🌐", "🔊" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -43,8 +43,8 @@ static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = { 
 	/* symbol     arrange function */
-	{ "◧"    /*"[]="*/,      tile },   /* first entry is default */
-	{ "⧉"    /*"><>"*/,      NULL },   /* no layout function means floating behavior */
+	{ "[]=",      tile },   /* first entry is default */
+	{ "><>",      NULL },   /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
 
