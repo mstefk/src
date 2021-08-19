@@ -1,9 +1,0 @@
-/home/archuser/src/xkb-switch/src/xkb-switch-1.8.5/CMakeFiles/install/strip.dir
-/home/archuser/src/xkb-switch/src/xkb-switch-1.8.5/CMakeFiles/install/local.dir
-/home/archuser/src/xkb-switch/src/xkb-switch-1.8.5/CMakeFiles/edit_cache.dir
-/home/archuser/src/xkb-switch/src/xkb-switch-1.8.5/CMakeFiles/man_xkb-switch_1.dir
-/home/archuser/src/xkb-switch/src/xkb-switch-1.8.5/CMakeFiles/install.dir
-/home/archuser/src/xkb-switch/src/xkb-switch-1.8.5/CMakeFiles/list_install_components.dir
-/home/archuser/src/xkb-switch/src/xkb-switch-1.8.5/CMakeFiles/rebuild_cache.dir
-/home/archuser/src/xkb-switch/src/xkb-switch-1.8.5/CMakeFiles/xkb-switch.dir
-/home/archuser/src/xkb-switch/src/xkb-switch-1.8.5/CMakeFiles/xkbswitch.dir
